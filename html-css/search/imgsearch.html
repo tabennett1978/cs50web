@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .flex-container div {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-header {}
+        .flex-main {}
+        .flex-footer {}
+
+        #googlepic { max-width: 15%; }
+
+        #searchbox {
+            border-radius: 25px;
+            padding: 5px;
+            border-color: lightgray;
+            border-width: 1px;
+            width: 400px;
+        }
+
+    </style>
+
+    <body class="flex-container">
+        <div class="flex-header">
+            Navigation
+        </div>
+        <div class="flex-main">
+            <img id="googlepic" src="Google_2015_logo.svg.png" alt="Google Logo">
+            <form action="https://google.com/search">
+                <input type="text" name="q" id="searchbox">
+                <div>
+                    <input type="submit" value="Google Search">
+                </div>
+            </form>
+        </div>
+        <div class="flex-footer">
+            Footer
+        </div>
+    </body>
+</html>
